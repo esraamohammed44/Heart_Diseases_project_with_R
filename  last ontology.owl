@@ -1,0 +1,1462 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ontologies/chronic-diease-patient-education-ontology#"
+     xml:base="http://www.semanticweb.org/ontologies/chronic-diease-patient-education-ontology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:obda="https://w3id.org/obda/vocabulary#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:Heart-diease-ontology="http://www.semanticweb.org/ontologies/Heart-diease-ontology#"
+     xmlns:chronic-diease-patient-education-ontology="http://www.semanticweb.org/ontologies/chronic-diease-patient-education-ontology#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasDisease -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasDisease">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#abnormal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Types_of_heart_diseases"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasMedicaltest -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasMedicaltest">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Medical_tests"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasPatientAb -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasPatientAb">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#abnormal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasPatientN -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasPatientN">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#normal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasSymptom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasSymptom">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Types_of_heart_diseases"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Symptoms_of_heart_diseases"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasTreatment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasTreatment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Types_of_heart_diseases"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Medication"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasabnormal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasabnormal">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Ca"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#ChestPainType"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Cholesterol"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#ExerciseAngine"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#FastingBS"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#MaxHR"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Oldpeak"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#RestingBP"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#RestingECG"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#ST_Slope"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#thal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#abnormal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasnormal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasnormal">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Ca"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#ChestPainType"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Cholesterol"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#ExerciseAngine"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#FastingBS"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#MaxHR"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Oldpeak"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#RestingBP"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#RestingECG"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#ST_Slope"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#thal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#normal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#isSymptomOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#isSymptomOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Symptoms_of_heart_diseases"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Types_of_heart_diseases"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#treatmentFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#treatmentFor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Medication"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Types_of_heart_diseases"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasAgeValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasAgeValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasAntiHypertensiveDrugValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasAntiHypertensiveDrugValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#AntiHypetensiveDrug"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasBisoprololValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasBisoprololValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Bisoprolol"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasCaValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasCaValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Ca"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasCandesartanValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasCandesartanValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Candesartan"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasCarvedilolValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasCarvedilolValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Carvedilol"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasChestPainTypeValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasChestPainTypeValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#ChestPainType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasCholesterol-lowering_drugsValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasCholesterol-lowering_drugsValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Cholesterol-lowering_drugs"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasCholesterolValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasCholesterolValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Cholesterol"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasCilazaprilValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasCilazaprilValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Cilazapril"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasDiureticsValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasDiureticsValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Diuretics"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasExerciseAngineValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasExerciseAngineValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#ExerciseAngine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasFastingBSValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasFastingBSValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#FastingBS"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasGenderValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasGenderValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasHypoglycemicDrugValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasHypoglycemicDrugValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#HypoglycemicDrug"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasHypolipidemicDrugValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasHypolipidemicDrugValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#HypolipidemicDrug"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasInotropesValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasInotropesValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Inotropes"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasLosartanValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasLosartanValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Losartan"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasMaxHRValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasMaxHRValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#MaxHR"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasMetoprololValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasMetoprololValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Metoprolol"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasOldpeakValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasOldpeakValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Oldpeak"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasPatient_idValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasPatient_idValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasRestingBPValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasRestingBPValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#RestingBP"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasRestingECGValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasRestingECGValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#RestingECG"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasST_SlopeValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasST_SlopeValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#ST_Slope"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasSpironolactoneValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasSpironolactoneValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Spironolactone"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasSympValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasSympValue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Symptoms_of_heart_diseases"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasValsartanValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasValsartanValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Valsartan"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#hastargetValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#hastargetValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#target"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#base64Binary"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasthalValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#hasthalValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#thal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Acute_Coronary_Syndrome -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Acute_Coronary_Syndrome">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Coronary_Artery_Diseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#AntiHypetensiveDrug -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#AntiHypetensiveDrug">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Medication"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Bisoprolol"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Carvedilol"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Cholesterol-lowering_drugs"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Diuretics"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Inotropes"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Metoprolol"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Spironolactone"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Angiotensin-converting_enzyme_(ACE)_inhibitors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Atrial_Fibrillation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Atrial_Fibrillation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Cardiomyopathy_Diseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Bisoprolol -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Bisoprolol">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Medication"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Carvedilol"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Cholesterol-lowering_drugs"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Diuretics"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#HypoglycemicDrug"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#HypolipidemicDrug"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Inotropes"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Metoprolol"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Spironolactone"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Angiotensin-converting_enzyme_(ACE)_inhibitors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Ca -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Ca">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Medical_tests"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#ChestPainType"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Cholesterol"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#ExerciseAngine"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#FastingBS"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#MaxHR"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#RestingBP"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#RestingECG"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#ST_Slope"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#thal"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">number of major vessels (0-3) colored by flourosopy</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Candesartan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Candesartan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Angiotensin-converting_enzyme_(ACE)_inhibitors"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Cilazapril"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Losartan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Valsartan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Cardiomyopathy_Diseases -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Cardiomyopathy_Diseases">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Types_of_heart_diseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Carvedilol -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Carvedilol">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Medication"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Cholesterol-lowering_drugs"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Diuretics"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#HypoglycemicDrug"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#HypolipidemicDrug"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Inotropes"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Metoprolol"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Spironolactone"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Angiotensin-converting_enzyme_(ACE)_inhibitors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#ChestPainType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#ChestPainType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Medical_tests"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Cholesterol"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#ExerciseAngine"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#FastingBS"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#MaxHR"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Oldpeak"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#RestingBP"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#RestingECG"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#ST_Slope"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#thal"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chest pain appears in many forms, ranging from a sharp stab to a dull ache. Sometimes chest pain feels crushing or burning. In certain cases, the pain travels up the neck, into the jaw, and then spreads to the back or down one or both arms.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Cholesterol -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Cholesterol">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Medical_tests"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#ExerciseAngine"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#FastingBS"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#MaxHR"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Oldpeak"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#RestingBP"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#RestingECG"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#ST_Slope"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#thal"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">serum cholestoral in mg/dl</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Cholesterol-lowering_drugs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Cholesterol-lowering_drugs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Medication"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Diuretics"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#HypoglycemicDrug"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#HypolipidemicDrug"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Inotropes"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Metoprolol"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Spironolactone"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Angiotensin-converting_enzyme_(ACE)_inhibitors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Cilazapril -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Cilazapril">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Angiotensin-converting_enzyme_(ACE)_inhibitors"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Losartan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Valsartan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Congenital_Heart_Disease -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Congenital_Heart_Disease">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Cardiomyopathy_Diseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Coronary_Artery_Diseases -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Coronary_Artery_Diseases">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Types_of_heart_diseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Dilated_Cardiomyopathy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Dilated_Cardiomyopathy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Cardiomyopathy_Diseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Diuretics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Diuretics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Medication"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#HypoglycemicDrug"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#HypolipidemicDrug"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Inotropes"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Metoprolol"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Spironolactone"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Angiotensin-converting_enzyme_(ACE)_inhibitors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Dizziness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Dizziness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Symptoms_of_heart_diseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#ExerciseAngine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#ExerciseAngine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Medical_tests"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#FastingBS"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#MaxHR"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Oldpeak"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#RestingBP"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#RestingECG"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#ST_Slope"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#thal"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Exercise-induced angina (AP) is a common complaint of cardiac patients, particularly when exercising in the cold.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Extreme_Weakness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Extreme_Weakness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Symptoms_of_heart_diseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Faster_heartbeat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Faster_heartbeat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Symptoms_of_heart_diseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#FastingBS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#FastingBS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Medical_tests"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#MaxHR"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Oldpeak"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#RestingBP"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#RestingECG"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#ST_Slope"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#thal"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fasting blood sugar &gt; 120 mg/dl</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Fullness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Fullness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Symptoms_of_heart_diseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Heart_Diseases -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Heart_Diseases"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Heart_Failure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Heart_Failure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Coronary_Artery_Diseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Heart_Rhythm_Disorders -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Heart_Rhythm_Disorders">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Cardiomyopathy_Diseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Heart_valve_Diseases -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Heart_valve_Diseases">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Types_of_heart_diseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Heaviness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Heaviness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Symptoms_of_heart_diseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Hypertrophic_Cardiomyopathy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Hypertrophic_Cardiomyopathy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Cardiomyopathy_Diseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#HypoglycemicDrug -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#HypoglycemicDrug">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Medication"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Inotropes"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Metoprolol"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Spironolactone"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Angiotensin-converting_enzyme_(ACE)_inhibitors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#HypolipidemicDrug -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#HypolipidemicDrug">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Medication"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Inotropes"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Metoprolol"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Spironolactone"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Angiotensin-converting_enzyme_(ACE)_inhibitors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Indigestion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Indigestion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Symptoms_of_heart_diseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Inotropes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Inotropes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Medication"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Metoprolol"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Spironolactone"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Angiotensin-converting_enzyme_(ACE)_inhibitors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Irregular_Heart_Rhythm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Irregular_Heart_Rhythm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Cardiomyopathy_Diseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Losartan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Losartan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Angiotensin-converting_enzyme_(ACE)_inhibitors"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Valsartan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#MaxHR -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#MaxHR">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Medical_tests"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Oldpeak"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#RestingBP"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#RestingECG"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#ST_Slope"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#thal"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">maximum heart rate achieved</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Medical_tests -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Medical_tests">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Heart_Diseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Medication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Medication">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Heart_Diseases"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#normal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Metoprolol -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Metoprolol">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Medication"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Spironolactone"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Angiotensin-converting_enzyme_(ACE)_inhibitors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Nausea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Nausea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Symptoms_of_heart_diseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Oldpeak -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Oldpeak">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Medical_tests"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#RestingBP"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#RestingECG"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#ST_Slope"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#thal"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ST depression induced by exercise relative to rest</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Pain_in_the_chest_or_arm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Pain_in_the_chest_or_arm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Symptoms_of_heart_diseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Palpitations -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Palpitations">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Symptoms_of_heart_diseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Patient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Patient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Heart_Diseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Pressure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Pressure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Symptoms_of_heart_diseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#RestingBP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#RestingBP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Medical_tests"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#RestingECG"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#ST_Slope"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#thal"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood pressure (in mmHg on admission to the hospital)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#RestingECG -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#RestingECG">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Medical_tests"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#ST_Slope"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#thal"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">resting electrocardiographic results</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Restrictive_Cardiomyopathy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Restrictive_Cardiomyopathy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Cardiomyopathy_Diseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#ST_Slope -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#ST_Slope">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Medical_tests"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#thal"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">the slope of the peak exercise ST segment</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Shortness_of_breath -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Shortness_of_breath">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Symptoms_of_heart_diseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Spironolactone -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Spironolactone">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Medication"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Angiotensin-converting_enzyme_(ACE)_inhibitors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Sudden_Cardiac_Death -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Sudden_Cardiac_Death">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Cardiomyopathy_Diseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Sweating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Sweating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Symptoms_of_heart_diseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Symptoms_of_heart_diseases -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Symptoms_of_heart_diseases">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Heart_Diseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Types_of_heart_diseases -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Types_of_heart_diseases">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Heart_Diseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Unstable_Angina -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Unstable_Angina">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Coronary_Artery_Diseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Valsartan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Valsartan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Angiotensin-converting_enzyme_(ACE)_inhibitors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Vomiting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Vomiting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Symptoms_of_heart_diseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#abnormal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#abnormal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#target"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#normal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#normal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#normal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#target"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#target -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#target">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Heart_Diseases"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">the predicted attribute - diagnosis of heart disease</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#thal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#thal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Medical_tests"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thalassemia is a blood disorder passed down through families (inherited) in which the body makes an abnormal form or inadequate amount of hemoglobin. Hemoglobin is the protein in red blood cells that carries oxygen. The disorder results in large numbers of red blood cells being destroyed, which leads to anemia.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#valvular_insufficiency -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#valvular_insufficiency">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Heart_valve_Diseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#valvular_stenosis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#valvular_stenosis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Heart_valve_Diseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Angiotensin-converting_enzyme_(ACE)_inhibitors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Angiotensin-converting_enzyme_(ACE)_inhibitors">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Medication"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Patient1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Patient1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Patient"/>
+        <Heart-diease-ontology:hasMedicaltest rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Patient1"/>
+        <Heart-diease-ontology:hasAgeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">36</Heart-diease-ontology:hasAgeValue>
+        <Heart-diease-ontology:hasCaValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</Heart-diease-ontology:hasCaValue>
+        <Heart-diease-ontology:hasChestPainTypeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-anginal pain</Heart-diease-ontology:hasChestPainTypeValue>
+        <Heart-diease-ontology:hasCholesterolValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">340</Heart-diease-ontology:hasCholesterolValue>
+        <Heart-diease-ontology:hasExerciseAngineValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Heart-diease-ontology:hasExerciseAngineValue>
+        <Heart-diease-ontology:hasFastingBSValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Heart-diease-ontology:hasFastingBSValue>
+        <Heart-diease-ontology:hasGenderValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">male</Heart-diease-ontology:hasGenderValue>
+        <Heart-diease-ontology:hasMaxHRValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">184</Heart-diease-ontology:hasMaxHRValue>
+        <Heart-diease-ontology:hasOldpeakValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</Heart-diease-ontology:hasOldpeakValue>
+        <Heart-diease-ontology:hasPatient_idValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0000</Heart-diease-ontology:hasPatient_idValue>
+        <Heart-diease-ontology:hasRestingBPValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">112</Heart-diease-ontology:hasRestingBPValue>
+        <Heart-diease-ontology:hasRestingECGValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">normal</Heart-diease-ontology:hasRestingECGValue>
+        <Heart-diease-ontology:hasST_SlopeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">flat</Heart-diease-ontology:hasST_SlopeValue>
+        <Heart-diease-ontology:hastargetValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Heart-diease-ontology:hastargetValue>
+        <Heart-diease-ontology:hasthalValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</Heart-diease-ontology:hasthalValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Patient2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Patient2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Patient"/>
+        <Heart-diease-ontology:hasMedicaltest rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Patient2"/>
+        <Heart-diease-ontology:hasAgeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">33</Heart-diease-ontology:hasAgeValue>
+        <Heart-diease-ontology:hasCaValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</Heart-diease-ontology:hasCaValue>
+        <Heart-diease-ontology:hasChestPainTypeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">asymptomatic</Heart-diease-ontology:hasChestPainTypeValue>
+        <Heart-diease-ontology:hasCholesterolValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">246</Heart-diease-ontology:hasCholesterolValue>
+        <Heart-diease-ontology:hasExerciseAngineValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Heart-diease-ontology:hasExerciseAngineValue>
+        <Heart-diease-ontology:hasFastingBSValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Heart-diease-ontology:hasFastingBSValue>
+        <Heart-diease-ontology:hasGenderValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">female</Heart-diease-ontology:hasGenderValue>
+        <Heart-diease-ontology:hasMaxHRValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150</Heart-diease-ontology:hasMaxHRValue>
+        <Heart-diease-ontology:hasOldpeakValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</Heart-diease-ontology:hasOldpeakValue>
+        <Heart-diease-ontology:hasPatient_idValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0028</Heart-diease-ontology:hasPatient_idValue>
+        <Heart-diease-ontology:hasRestingBPValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</Heart-diease-ontology:hasRestingBPValue>
+        <Heart-diease-ontology:hasRestingECGValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">normal</Heart-diease-ontology:hasRestingECGValue>
+        <Heart-diease-ontology:hasST_SlopeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">flat</Heart-diease-ontology:hasST_SlopeValue>
+        <Heart-diease-ontology:hastargetValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Heart-diease-ontology:hastargetValue>
+        <Heart-diease-ontology:hasthalValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</Heart-diease-ontology:hasthalValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Patient3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Patient3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Patient"/>
+        <Heart-diease-ontology:hasMedicaltest rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Patient3"/>
+        <Heart-diease-ontology:hasAgeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">46</Heart-diease-ontology:hasAgeValue>
+        <Heart-diease-ontology:hasCaValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</Heart-diease-ontology:hasCaValue>
+        <Heart-diease-ontology:hasChestPainTypeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">typical angina</Heart-diease-ontology:hasChestPainTypeValue>
+        <Heart-diease-ontology:hasCholesterolValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">272</Heart-diease-ontology:hasCholesterolValue>
+        <Heart-diease-ontology:hasExerciseAngineValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Heart-diease-ontology:hasExerciseAngineValue>
+        <Heart-diease-ontology:hasFastingBSValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Heart-diease-ontology:hasFastingBSValue>
+        <Heart-diease-ontology:hasGenderValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">male</Heart-diease-ontology:hasGenderValue>
+        <Heart-diease-ontology:hasMaxHRValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">175</Heart-diease-ontology:hasMaxHRValue>
+        <Heart-diease-ontology:hasOldpeakValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</Heart-diease-ontology:hasOldpeakValue>
+        <Heart-diease-ontology:hasPatient_idValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0065</Heart-diease-ontology:hasPatient_idValue>
+        <Heart-diease-ontology:hasRestingBPValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">140</Heart-diease-ontology:hasRestingBPValue>
+        <Heart-diease-ontology:hasRestingECGValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">normal</Heart-diease-ontology:hasRestingECGValue>
+        <Heart-diease-ontology:hasST_SlopeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">flat</Heart-diease-ontology:hasST_SlopeValue>
+        <Heart-diease-ontology:hastargetValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Heart-diease-ontology:hastargetValue>
+        <Heart-diease-ontology:hasthalValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</Heart-diease-ontology:hasthalValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Patient4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Patient4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Patient"/>
+        <Heart-diease-ontology:hasMedicaltest rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Patient4"/>
+        <Heart-diease-ontology:hasAgeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">54</Heart-diease-ontology:hasAgeValue>
+        <Heart-diease-ontology:hasCaValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</Heart-diease-ontology:hasCaValue>
+        <Heart-diease-ontology:hasChestPainTypeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atypical angina</Heart-diease-ontology:hasChestPainTypeValue>
+        <Heart-diease-ontology:hasCholesterolValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">197</Heart-diease-ontology:hasCholesterolValue>
+        <Heart-diease-ontology:hasExerciseAngineValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Heart-diease-ontology:hasExerciseAngineValue>
+        <Heart-diease-ontology:hasFastingBSValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Heart-diease-ontology:hasFastingBSValue>
+        <Heart-diease-ontology:hasGenderValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</Heart-diease-ontology:hasGenderValue>
+        <Heart-diease-ontology:hasMaxHRValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">152</Heart-diease-ontology:hasMaxHRValue>
+        <Heart-diease-ontology:hasOldpeakValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.2</Heart-diease-ontology:hasOldpeakValue>
+        <Heart-diease-ontology:hasPatient_idValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0124</Heart-diease-ontology:hasPatient_idValue>
+        <Heart-diease-ontology:hasRestingBPValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">130</Heart-diease-ontology:hasRestingBPValue>
+        <Heart-diease-ontology:hasRestingECGValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">normal</Heart-diease-ontology:hasRestingECGValue>
+        <Heart-diease-ontology:hasST_SlopeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">down sloping</Heart-diease-ontology:hasST_SlopeValue>
+        <Heart-diease-ontology:hastargetValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Heart-diease-ontology:hastargetValue>
+        <Heart-diease-ontology:hasthalValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</Heart-diease-ontology:hasthalValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Patient5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Patient5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Patient"/>
+        <Heart-diease-ontology:hasMedicaltest rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Patient5"/>
+        <Heart-diease-ontology:hasAgeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">54</Heart-diease-ontology:hasAgeValue>
+        <Heart-diease-ontology:hasCaValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</Heart-diease-ontology:hasCaValue>
+        <Heart-diease-ontology:hasChestPainTypeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">typical angina</Heart-diease-ontology:hasChestPainTypeValue>
+        <Heart-diease-ontology:hasCholesterolValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">198</Heart-diease-ontology:hasCholesterolValue>
+        <Heart-diease-ontology:hasExerciseAngineValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Heart-diease-ontology:hasExerciseAngineValue>
+        <Heart-diease-ontology:hasFastingBSValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Heart-diease-ontology:hasFastingBSValue>
+        <Heart-diease-ontology:hasGenderValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">female</Heart-diease-ontology:hasGenderValue>
+        <Heart-diease-ontology:hasMaxHRValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">168</Heart-diease-ontology:hasMaxHRValue>
+        <Heart-diease-ontology:hasOldpeakValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</Heart-diease-ontology:hasOldpeakValue>
+        <Heart-diease-ontology:hasPatient_idValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0125</Heart-diease-ontology:hasPatient_idValue>
+        <Heart-diease-ontology:hasRestingBPValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">105</Heart-diease-ontology:hasRestingBPValue>
+        <Heart-diease-ontology:hasRestingECGValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">having ST</Heart-diease-ontology:hasRestingECGValue>
+        <Heart-diease-ontology:hasST_SlopeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">flat</Heart-diease-ontology:hasST_SlopeValue>
+        <Heart-diease-ontology:hastargetValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Heart-diease-ontology:hastargetValue>
+        <Heart-diease-ontology:hasthalValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</Heart-diease-ontology:hasthalValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Patient6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Patient6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Patient"/>
+        <Heart-diease-ontology:hasMedicaltest rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Patient6"/>
+        <Heart-diease-ontology:hasAgeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">54</Heart-diease-ontology:hasAgeValue>
+        <Heart-diease-ontology:hasCaValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</Heart-diease-ontology:hasCaValue>
+        <Heart-diease-ontology:hasChestPainTypeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atypical angina</Heart-diease-ontology:hasChestPainTypeValue>
+        <Heart-diease-ontology:hasCholesterolValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">196</Heart-diease-ontology:hasCholesterolValue>
+        <Heart-diease-ontology:hasExerciseAngineValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Heart-diease-ontology:hasExerciseAngineValue>
+        <Heart-diease-ontology:hasFastingBSValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Heart-diease-ontology:hasFastingBSValue>
+        <Heart-diease-ontology:hasGenderValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">female</Heart-diease-ontology:hasGenderValue>
+        <Heart-diease-ontology:hasMaxHRValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">169</Heart-diease-ontology:hasMaxHRValue>
+        <Heart-diease-ontology:hasOldpeakValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.1</Heart-diease-ontology:hasOldpeakValue>
+        <Heart-diease-ontology:hasPatient_idValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">223</Heart-diease-ontology:hasPatient_idValue>
+        <Heart-diease-ontology:hasRestingBPValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">136</Heart-diease-ontology:hasRestingBPValue>
+        <Heart-diease-ontology:hasRestingECGValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">normal</Heart-diease-ontology:hasRestingECGValue>
+        <Heart-diease-ontology:hasST_SlopeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">up sloping</Heart-diease-ontology:hasST_SlopeValue>
+        <Heart-diease-ontology:hastargetValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Heart-diease-ontology:hastargetValue>
+        <Heart-diease-ontology:hasthalValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</Heart-diease-ontology:hasthalValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Patient7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Patient7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Patient"/>
+        <Heart-diease-ontology:hasMedicaltest rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Patient7"/>
+        <Heart-diease-ontology:hasAgeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">37</Heart-diease-ontology:hasAgeValue>
+        <Heart-diease-ontology:hasCaValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</Heart-diease-ontology:hasCaValue>
+        <Heart-diease-ontology:hasChestPainTypeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">asymptomatic</Heart-diease-ontology:hasChestPainTypeValue>
+        <Heart-diease-ontology:hasCholesterolValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">207</Heart-diease-ontology:hasCholesterolValue>
+        <Heart-diease-ontology:hasExerciseAngineValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Heart-diease-ontology:hasExerciseAngineValue>
+        <Heart-diease-ontology:hasFastingBSValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Heart-diease-ontology:hasFastingBSValue>
+        <Heart-diease-ontology:hasGenderValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</Heart-diease-ontology:hasGenderValue>
+        <Heart-diease-ontology:hasMaxHRValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">130</Heart-diease-ontology:hasMaxHRValue>
+        <Heart-diease-ontology:hasOldpeakValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.5</Heart-diease-ontology:hasOldpeakValue>
+        <Heart-diease-ontology:hasPatient_idValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0030</Heart-diease-ontology:hasPatient_idValue>
+        <Heart-diease-ontology:hasRestingBPValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">140</Heart-diease-ontology:hasRestingBPValue>
+        <Heart-diease-ontology:hasRestingECGValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">normal</Heart-diease-ontology:hasRestingECGValue>
+        <Heart-diease-ontology:hasST_SlopeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">flat</Heart-diease-ontology:hasST_SlopeValue>
+        <Heart-diease-ontology:hastargetValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Heart-diease-ontology:hastargetValue>
+        <Heart-diease-ontology:hasthalValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</Heart-diease-ontology:hasthalValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Patient8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Patient8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Patient"/>
+        <Heart-diease-ontology:hasMedicaltest rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Patient8"/>
+        <Heart-diease-ontology:hasAgeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">47</Heart-diease-ontology:hasAgeValue>
+        <Heart-diease-ontology:hasCaValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</Heart-diease-ontology:hasCaValue>
+        <Heart-diease-ontology:hasChestPainTypeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">asymptomatic</Heart-diease-ontology:hasChestPainTypeValue>
+        <Heart-diease-ontology:hasCholesterolValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">226</Heart-diease-ontology:hasCholesterolValue>
+        <Heart-diease-ontology:hasExerciseAngineValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Heart-diease-ontology:hasExerciseAngineValue>
+        <Heart-diease-ontology:hasFastingBSValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Heart-diease-ontology:hasFastingBSValue>
+        <Heart-diease-ontology:hasGenderValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</Heart-diease-ontology:hasGenderValue>
+        <Heart-diease-ontology:hasMaxHRValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">98</Heart-diease-ontology:hasMaxHRValue>
+        <Heart-diease-ontology:hasOldpeakValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.5</Heart-diease-ontology:hasOldpeakValue>
+        <Heart-diease-ontology:hasPatient_idValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0035</Heart-diease-ontology:hasPatient_idValue>
+        <Heart-diease-ontology:hasRestingBPValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">150</Heart-diease-ontology:hasRestingBPValue>
+        <Heart-diease-ontology:hasRestingECGValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">normal</Heart-diease-ontology:hasRestingECGValue>
+        <Heart-diease-ontology:hasST_SlopeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">flat</Heart-diease-ontology:hasST_SlopeValue>
+        <Heart-diease-ontology:hastargetValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Heart-diease-ontology:hastargetValue>
+        <Heart-diease-ontology:hasthalValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</Heart-diease-ontology:hasthalValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#Patient9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Patient9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Patient"/>
+        <Heart-diease-ontology:hasMedicaltest rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Patient9"/>
+        <Heart-diease-ontology:hasAgeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">42</Heart-diease-ontology:hasAgeValue>
+        <Heart-diease-ontology:hasCaValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</Heart-diease-ontology:hasCaValue>
+        <Heart-diease-ontology:hasChestPainTypeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non anginal pain</Heart-diease-ontology:hasChestPainTypeValue>
+        <Heart-diease-ontology:hasCholesterolValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">228</Heart-diease-ontology:hasCholesterolValue>
+        <Heart-diease-ontology:hasExerciseAngineValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Heart-diease-ontology:hasExerciseAngineValue>
+        <Heart-diease-ontology:hasFastingBSValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Heart-diease-ontology:hasFastingBSValue>
+        <Heart-diease-ontology:hasGenderValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</Heart-diease-ontology:hasGenderValue>
+        <Heart-diease-ontology:hasMaxHRValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">152</Heart-diease-ontology:hasMaxHRValue>
+        <Heart-diease-ontology:hasOldpeakValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.5</Heart-diease-ontology:hasOldpeakValue>
+        <Heart-diease-ontology:hasPatient_idValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0002</Heart-diease-ontology:hasPatient_idValue>
+        <Heart-diease-ontology:hasRestingBPValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">120</Heart-diease-ontology:hasRestingBPValue>
+        <Heart-diease-ontology:hasRestingECGValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">normal</Heart-diease-ontology:hasRestingECGValue>
+        <Heart-diease-ontology:hasST_SlopeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">flat</Heart-diease-ontology:hasST_SlopeValue>
+        <Heart-diease-ontology:hastargetValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Heart-diease-ontology:hastargetValue>
+        <Heart-diease-ontology:hasthalValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</Heart-diease-ontology:hasthalValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#patient10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#patient10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Patient"/>
+        <Heart-diease-ontology:hasMedicaltest rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#patient10"/>
+        <Heart-diease-ontology:hasAgeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">54</Heart-diease-ontology:hasAgeValue>
+        <Heart-diease-ontology:hasCaValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</Heart-diease-ontology:hasCaValue>
+        <Heart-diease-ontology:hasChestPainTypeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atypical angina</Heart-diease-ontology:hasChestPainTypeValue>
+        <Heart-diease-ontology:hasCholesterolValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">187</Heart-diease-ontology:hasCholesterolValue>
+        <Heart-diease-ontology:hasExerciseAngineValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Heart-diease-ontology:hasExerciseAngineValue>
+        <Heart-diease-ontology:hasFastingBSValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Heart-diease-ontology:hasFastingBSValue>
+        <Heart-diease-ontology:hasGenderValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</Heart-diease-ontology:hasGenderValue>
+        <Heart-diease-ontology:hasMaxHRValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">144</Heart-diease-ontology:hasMaxHRValue>
+        <Heart-diease-ontology:hasOldpeakValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0</Heart-diease-ontology:hasOldpeakValue>
+        <Heart-diease-ontology:hasPatient_idValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0390</Heart-diease-ontology:hasPatient_idValue>
+        <Heart-diease-ontology:hasRestingBPValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">140</Heart-diease-ontology:hasRestingBPValue>
+        <Heart-diease-ontology:hasRestingECGValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">normal</Heart-diease-ontology:hasRestingECGValue>
+        <Heart-diease-ontology:hasST_SlopeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">flat</Heart-diease-ontology:hasST_SlopeValue>
+        <Heart-diease-ontology:hastargetValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Heart-diease-ontology:hastargetValue>
+        <Heart-diease-ontology:hasthalValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</Heart-diease-ontology:hasthalValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/Heart-diease-ontology#patient11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#patient11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#Patient"/>
+        <Heart-diease-ontology:hasMedicaltest rdf:resource="http://www.semanticweb.org/ontologies/Heart-diease-ontology#patient11"/>
+        <Heart-diease-ontology:hasAgeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">46</Heart-diease-ontology:hasAgeValue>
+        <Heart-diease-ontology:hasCaValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</Heart-diease-ontology:hasCaValue>
+        <Heart-diease-ontology:hasChestPainTypeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">asymptomatic</Heart-diease-ontology:hasChestPainTypeValue>
+        <Heart-diease-ontology:hasCholesterolValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">238</Heart-diease-ontology:hasCholesterolValue>
+        <Heart-diease-ontology:hasExerciseAngineValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Heart-diease-ontology:hasExerciseAngineValue>
+        <Heart-diease-ontology:hasFastingBSValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Heart-diease-ontology:hasFastingBSValue>
+        <Heart-diease-ontology:hasGenderValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</Heart-diease-ontology:hasGenderValue>
+        <Heart-diease-ontology:hasMaxHRValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">140</Heart-diease-ontology:hasMaxHRValue>
+        <Heart-diease-ontology:hasOldpeakValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</Heart-diease-ontology:hasOldpeakValue>
+        <Heart-diease-ontology:hasPatient_idValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0004</Heart-diease-ontology:hasPatient_idValue>
+        <Heart-diease-ontology:hasRestingBPValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">110</Heart-diease-ontology:hasRestingBPValue>
+        <Heart-diease-ontology:hasRestingECGValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">having ST</Heart-diease-ontology:hasRestingECGValue>
+        <Heart-diease-ontology:hasST_SlopeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">flat</Heart-diease-ontology:hasST_SlopeValue>
+        <Heart-diease-ontology:hastargetValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Heart-diease-ontology:hastargetValue>
+        <Heart-diease-ontology:hasthalValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</Heart-diease-ontology:hasthalValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#AntiHypetensiveDrug"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#HypoglycemicDrug"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/Heart-diease-ontology#HypolipidemicDrug"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
