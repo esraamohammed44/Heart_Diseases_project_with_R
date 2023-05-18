@@ -1,0 +1,57 @@
+# read the data
+Heart_Disease <- read.csv("heart.csv")
+print(Heart_Disease)
+
+# cout number of rows and columns
+str(Heart_Disease)# or dim(Heart_Disease)
+
+
+# show the first ten rows in the data
+head(Heart_Disease,10) 
+
+# show the names of columns in my data 
+names(Heart_Disease) 
+
+# show kind of target 
+class(target)
+
+# Help how to write in t test 
+help(t.test) #?t.test
+
+t.test(Cholesterol,target,
+       mu = 0, paired = TRUE, var.equal = FALSE,
+       conf.level = 0.95)
+
+
+split=split(Heart_Disease,Heart_Disease$target)
+normal = data.frame(split[1])
+abnormal = data.frame(split[2])
+res=t.test(Heart_Disease$target,mu=0)#Ho: mu=0
+print(res)
+########################################################################
+# read the data
+Heart_Disease <- read.csv("heart.csv")
+print(Heart_Disease)
+
+######
+hist(Heart_Disease$Ca, main="The effect of num of blood vessels in heart disease"
+     ,col="blue",
+     xlab="The number of blood vessels",ylab="heart disease")
+
+######
+
+hist(Heart_Disease$age, main="The effect of Age in heart disease",col="red",
+     xlab="age",ylab="heart disease")
+
+########
+barplot(table(Heart_Disease$sex),main="The effect of sex in heart disease",
+        xlab="sex",ylab="heart disease", border="red",col="blue",density=10)
+########
+pie(table(Heart_Disease$sex))
+
+######
+pie(table(Heart_Disease$Chest_Pain_Type))
+
+
+
+
